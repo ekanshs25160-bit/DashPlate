@@ -212,6 +212,111 @@ body {
     display: flex;
     gap: 0.75rem;
 }
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .menu-item {
+        padding: 1.25rem;
+    }
+    
+    .menu-item-img {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-section {
+        padding: 3rem 1rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+    
+    .menu-section h2 {
+        font-size: 1.75rem;
+    }
+    
+    .menu-header-section {
+        padding-bottom: 3rem;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .menu-item {
+        margin-top: 2.5rem;
+    }
+    
+    .menu-item-img {
+        width: 9rem;
+        height: 9rem;
+        margin-top: -2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .menu-section {
+        padding: 2.5rem 1rem;
+    }
+    
+    .menu-grid {
+        grid-template-columns: 1fr;
+        max-width: 24rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .menu-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .header .container {
+        padding: 0.75rem 1rem;
+    }
+    
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    .menu-item {
+        margin-top: 2rem;
+    }
+    
+    .menu-item-img {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .menu-item h4 {
+        font-size: 1.125rem;
+    }
+    
+    .menu-item .price {
+        font-size: 1rem;
+    }
+    
+    .footer {
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .footer-grid {
+        gap: 2rem;
+    }
+}
+
 .social-icon {
     width: 2rem;
     height: 2rem;
