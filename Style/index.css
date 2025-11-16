@@ -15,10 +15,10 @@ body {
 }
 .container {
     max-width: var(--max-width);
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem; 
-    padding-right: 1rem; 
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 .text-center { text-align: center; }
 .font-bold { font-weight: 700; }
