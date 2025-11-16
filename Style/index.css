@@ -1,0 +1,276 @@
+:root {
+    --primary-yellow: #F9D876;
+    --secondary-blue: #224957;
+    --bg-light-yellow: #FFF7E6;
+    --bg-dark-blue: #224957;
+    --text-color: #374151; 
+    --max-width: 1280px;
+}
+body {
+    font-family: 'Inter', sans-serif; 
+    color: var(--text-color);
+    background-color: var(--bg-light-yellow);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+}
+.text-center { text-align: center; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.uppercase { text-transform: uppercase; }
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); }
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1); }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+.rounded-xl { border-radius: 0.75rem; }
+.rounded-2xl { border-radius: 1rem; }
+.rounded-3xl { border-radius: 1.5rem; }
+.rounded-full { border-radius: 9999px; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.hidden { display: none; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.space-x-4 > * + * { margin-left: 1rem; }
+.grid { display: grid; }
+.transition { transition: all 300ms ease-in-out; }
+.transform { transform: scale(1); }
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 2rem; 
+    background-color: var(--primary-yellow);
+    color: #1F2937; 
+    font-weight: 600;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color: #FBBF24; 
+    transform: scale(1.05);
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: var(--bg-light-yellow);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.header .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1F2937;
+}
+.nav-links a {
+    color: #4B5563; 
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 150ms;
+}
+.nav-links a:hover {
+    color: var(--primary-yellow);
+}
+.nav-icon button {
+    color: #4B5563;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.nav-icon button:hover {
+    color: var(--primary-yellow);
+}
+.signin-btn {
+    padding: 0.5rem 1.25rem;
+    background-color: var(--primary-yellow);
+    color: white;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+.signin-btn:hover {
+    background-color: #FBBF24;
+}
+.hero-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    overflow: hidden;
+}
+.hero-grid {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+}
+.hero-content h1 {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    font-weight: 800;
+}
+.hero-content .highlight {
+    color: var(--primary-yellow);
+}
+.hero-content p {
+    margin-top: 1rem;
+    color: #4B5563;
+    max-width: 28rem;
+}
+.hero-image-container {
+    position: relative;
+}
+.yellow-circle-1 {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--primary-yellow);
+    border-radius: 9999px;
+    top: -1rem;
+    right: -1rem;
+    opacity: 0.5;
+    display: none;
+}
+.yellow-circle-2 {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary-yellow);
+    border-radius: 9999px;
+    bottom: -2.5rem;
+    left: 33.333%;
+    opacity: 0.5;
+    display: none;
+}
+.yellow-circle-3 {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--primary-yellow);
+    border-radius: 9999px;
+    top: 50%;
+    left: 0;
+    opacity: 0.5;
+    display: none;
+}
+.main-food-img {
+    width: 100%;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10;
+}
+.side-dish-img-1 {
+    position: absolute;
+    bottom: 1rem;
+    left: -2.5rem;
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 9999px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border: 4px solid white;
+    display: none;
+}
+.side-dish-img-2 {
+    position: absolute;
+    bottom: -2.5rem;
+    right: 0;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.wave-shape {
+    position: absolute;
+    bottom: -5rem;
+    left: -2.5rem;
+    width: 12rem;
+    height: 5rem;
+    overflow: hidden;
+    display: none;
+}
+.wave-shape svg path {
+    fill: var(--primary-yellow);
+}
+.service-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    margin: 3rem 0;
+}
+.subtitle {
+    color: var(--primary-yellow);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.service-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+.service-section p.lead {
+    color: #4B5563;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+.service-grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+}
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 300ms;
+}
+.service-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.service-card img,
+.service-card svg {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+.service-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+.service-card p {
+    color: #4B5563;
+    margin-top: 0.5rem;
+    text-align: center;
+}
