@@ -9,17 +9,17 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="flex items-center" style="gap: 0.5rem;">
-                <span class="logo">DashPlate 🍜</span>
+            <div class="logo-container">
+                <img src="./Screenshot 2025-11-19 at 9.56.01 PM.png" alt="DashPlate Logo" class="logo-img">
             </div>
-            <nav class="nav-links hidden">
+            <nav class="nav-links">
                 <a href="#home">Home</a>
-                <a href="#menu">Menu</a>
-                <a href="#howitworks">How it works</a>
+                <a href="./menu.html">Menu</a>
+                
                 <a href="#about">About</a>
                 <a href="./contact.html">Contact</a>
             </nav>
-            <div class="flex items-center" style="gap: 1rem;">
+            <div class="header-actions">
                 <div class="nav-icon hidden-md">
                     <button>
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
@@ -56,7 +56,7 @@
                     <div class="yellow-circle-1"></div>
                     <div class="yellow-circle-2"></div>
                     <div class="yellow-circle-3"></div>
-                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=400&fit=crop" 
+                    <img src="Screenshot 2025-11-19 at 11.15.30 PM.png" 
                          alt="Delicious Salad Bowl" 
                          class="main-food-img">
                 </div>
@@ -100,18 +100,18 @@
                 </div>
             </div>
         </section>
-        <section id="menu" class="menu-section text-center">
+        <section id="menu" class="menu-section">
             <div class="container">
-                <span class="subtitle uppercase font-bold">Our menu</span>
+                <span class="section-subtitle">Our menu</span>
                 <h2>Our Popular Menu</h2>
-                <p class="lead">
+                <p class="section-description">
                     Explore our carefully curated selection of popular dishes, each prepared with the finest ingredients and delivered with care to satisfy your cravings.
                 </p>
                 <div class="menu-grid">
                     <div class="menu-item transition transform">
                         <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=250&h=250&fit=crop" alt="Mie Ramen" class="menu-item-img">
                         <h4>Mie Ramen</h4>
-                        <p style="color: #6B7280; font-size: 0.875rem; margin-top: 0.25rem;">Japanese noodle soup</p>
+                        <p style="color: #6B7280; font-size: 0.875rem; margin-top: 0.25rem;">Savory ramen with a slow-simmered broth, springy noodles, tender toppings, and scallions.</p>
                         <div class="price-row">
                             <span class="price">₹ 1,677</span>
                             <button class="heart-btn">
@@ -122,7 +122,7 @@
                     <div class="menu-item transition transform">
                         <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=250&h=250&fit=crop" alt="Salad Tahu" class="menu-item-img">
                         <h4>Salad Tahu</h4>
-                        <p style="color: #6B7280; font-size: 0.875rem; margin-top: 0.25rem;">Fresh tofu salad</p>
+                        <p style="color: #6B7280; font-size: 0.875rem; margin-top: 0.25rem;">Crisp mixed greens topped with marinated silken tofu, cucumber, cherry tomatoes, and a tangy sesame-ginger dressing.</p>
                         <div class="price-row">
                             <span class="price">₹ 1,287</span>
                             <button class="heart-btn">
@@ -131,9 +131,9 @@
                         </div>
                     </div>
                     <div class="menu-item transition transform">
-                        <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=250&h=250&fit=crop" alt="Roti Bakar" class="menu-item-img">
-                        <h4>Roti Bakar</h4>
-                        <p style="color: #6B7280; font-size: 0.875rem; margin-top: 0.25rem;">Grilled cheese bread</p>
+                        <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=250&h=250&fit=crop" alt="Garlic Butter Toast" class="menu-item-img">
+                        <h4>Garlic Butter Toast</h4>
+                        <p style="color: #6B7280; font-size: 0.875rem; margin-top: 0.25rem;">Buttery garlic toast brushed with roasted garlic butter, finished with fresh herbs and a golden, crunchy crust.</p>
                         <div class="price-row">
                             <span class="price">₹ 814</span>
                             <button class="heart-btn">
@@ -144,7 +144,7 @@
                     <div class="menu-item transition transform">
                         <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=250&h=250&fit=crop" alt="Spaghetti" class="menu-item-img">
                         <h4>Spaghetti</h4>
-                        <p style="color: #6B7280; font-size: 0.875rem; margin-top: 0.25rem;">Classic pasta dish</p>
+                        <p style="color: #6B7280; font-size: 0.875rem; margin-top: 0.25rem;">Al dente spaghetti tossed in a rich tomato-basil sauce, finished with shaved parmesan and a drizzle of olive oil.</p>
                         <div class="price-row">
                             <span class="price">₹ 1,494</span>
                             <button class="heart-btn">
@@ -226,18 +226,6 @@
             </div>
             <div class="cta-bg-overlay">
                 <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=1200&h=600&fit=crop" alt="Food background">
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="container contact-shortcut shadow-lg">
-                <div>
-                    <h3>Have Questions?</h3>
-                    <p>Contact our support team for assistance</p>
-                </div>
-                <a href="./contact.html" class="btn-primary shadow-md">
-                    Contact Us
-                </a>
             </div>
         </section>
     </main>
