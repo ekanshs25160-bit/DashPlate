@@ -307,7 +307,7 @@ body {
     position: absolute;
     width: 5rem;
     height: 5rem;
-    background-color: var(--primary-yellow);
+    background-color: #F9D876;
     border-radius: 9999px;
     top: -1rem;
     right: -1rem;
@@ -318,7 +318,7 @@ body {
     position: absolute;
     width: 3rem;
     height: 3rem;
-    background-color: var(--primary-yellow);
+    background-color: #F9D876;
     border-radius: 9999px;
     bottom: -2.5rem;
     left: 33.333%;
@@ -329,7 +329,7 @@ body {
     position: absolute;
     width: 2rem;
     height: 2rem;
-    background-color: var(--primary-yellow);
+    background-color: #F9D876;
     border-radius: 9999px;
     top: 50%;
     left: 0;
@@ -376,7 +376,7 @@ body {
     display: none;
 }
 .wave-shape svg path {
-    fill: var(--primary-yellow);
+    fill: #F9D876;
 }
 .service-section {
     padding-top: 5rem;
@@ -387,7 +387,7 @@ body {
     margin: 3rem auto;
 }
 .subtitle {
-    color: var(--primary-yellow);
+    color: #F9D876;
     font-weight: 600;
     font-size: 0.975rem;
 }
@@ -447,12 +447,9 @@ font-weight: 700;
 margin-top: 0.5rem;
 }
 .menu-section p.lead {
-color: #4B5563;
-max-width: 30rem;
-margin-left: auto;
-margin-right: auto;
-margin-top: 1rem;
-margin-bottom: 4rem;
+    color: #4B5563;
+    max-width: 30rem;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
     margin-bottom: 4rem;
