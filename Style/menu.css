@@ -52,7 +52,7 @@ body {
 .menu-grid {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .menu-item {
@@ -195,10 +195,8 @@ body {
     cursor: pointer;
     display: block;
 }
-.header { overflow: visible; }
-@media (max-width: 640px) {
-    .logo-img { height: 3rem; }
-    .header .container { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.header { 
+    overflow: visible; 
 }
 .nav-links {
     display: flex;
@@ -243,7 +241,7 @@ body {
 }
 .signin-btn {
     padding: 0.6rem 1.5rem;
-    background-color: var(--primary-yellow);
+    background-color: #F9D876;
     color: #1F2937;
     font-weight: 700;
     border-radius: 0.75rem;
@@ -284,7 +282,7 @@ body {
 .menu-grid {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .menu-item {
     background-color: white;
@@ -352,7 +350,7 @@ body {
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2.5rem;
 }
 .footer-logo {
@@ -368,110 +366,6 @@ body {
 .social-links {
     display: flex;
     gap: 0.75rem;
-}
-
-@media (max-width: 1024px) {
-    .menu-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-    }
-    
-    .menu-item {
-        padding: 1.25rem;
-    }
-    
-    .menu-item-img {
-        width: 10rem;
-        height: 10rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .menu-section {
-        padding: 3rem 1rem;
-    }
-    
-    .menu-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem;
-    }
-    
-    .menu-section h2 {
-        font-size: 1.75rem;
-    }
-    
-    .menu-header-section {
-        padding-bottom: 3rem;
-    }
-    
-    .nav-links {
-        display: none;
-    }
-    
-    .mobile-menu-btn {
-        display: block;
-    }
-    
-    .menu-item {
-        margin-top: 2.5rem;
-    }
-    
-    .menu-item-img {
-        width: 9rem;
-        height: 9rem;
-        margin-top: -2.5rem;
-    }
-}
-
-@media (max-width: 640px) {
-    .menu-section {
-        padding: 2.5rem 1rem;
-    }
-    
-    .menu-grid {
-        grid-template-columns: 1fr;
-        max-width: 24rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .menu-section h2 {
-        font-size: 1.5rem;
-    }
-    
-    .header .container {
-        padding: 0.75rem 1rem;
-    }
-    
-    .logo {
-        font-size: 1.25rem;
-    }
-    
-    .menu-item {
-        margin-top: 2rem;
-    }
-    
-    .menu-item-img {
-        width: 8rem;
-        height: 8rem;
-    }
-    
-    .menu-item h4 {
-        font-size: 1.125rem;
-    }
-    
-    .menu-item .price {
-        font-size: 1rem;
-    }
-    
-    .footer {
-        padding-top: 3rem;
-        padding-bottom: 1.5rem;
-    }
-    
-    .footer-grid {
-        gap: 2rem;
-    }
 }
 
 .social-icon {
